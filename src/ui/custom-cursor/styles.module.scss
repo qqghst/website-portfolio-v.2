@@ -1,0 +1,10 @@
+.secondaryCursor {
+    z-index: 1000;
+
+    position: fixed;
+    pointer-events: none;
+    width: 10px;
+    height: 10px;
+    background-color: #2CBEB2;
+    border-radius: 100%;
+}

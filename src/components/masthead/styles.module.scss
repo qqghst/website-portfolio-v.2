@@ -1,0 +1,38 @@
+$firstColor: rgb(123, 31, 163);
+$secondColor: rgb(103, 58, 183);
+$thirdColor: rgb(244, 143, 177);
+
+.gradient {
+    animation: gradient-animation 2s linear infinite;
+    background: linear-gradient(
+        to right,
+        $firstColor,
+        $secondColor,
+        $thirdColor,
+        $firstColor
+    );
+    background-size: 200%;
+
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    white-space: nowrap;
+}
+
+@keyframes gradient-animation {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+.lineChildren {
+    transform: translate(0, 500px);
+}
+.lineParent {
+    overflow: hidden;
+}
