@@ -1,0 +1,52 @@
+// $firstColor: rgba(255, 255, 255, 0.80);
+// $secondColor: rgba(255, 255, 255, 0.64);
+// $thirdColor: rgba(255, 255, 255, 0.32);
+
+// .loaderTitleGradient {
+//     animation: gradient-animation 2s linear infinite;
+//     background: linear-gradient(
+//         to right,
+//         $firstColor,
+//         $secondColor,
+//         $thirdColor,
+//     );
+//     background-size: 200%;
+
+//     -webkit-background-clip: text;
+//     background-clip: text;
+//     -webkit-text-fill-color: transparent;
+
+//     white-space: nowrap;
+// }
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.svg {
+    animation: rotate 2s infinite;
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    backdrop-filter: blur(12vmax);
+}
+
+
+.loader {
+    transition: background-color 0.5s ease;
+    transition: opacity 1s ease-in-out;
+}

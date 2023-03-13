@@ -1,0 +1,48 @@
+// $firstColor: rgb(123, 31, 162);
+// $secondColor: rgb(103, 58, 183);
+// $thirdColor: rgb(244, 143, 177);
+
+$firstColor: rgba(103, 43, 229, 1);
+$secondColor: rgba(0, 103, 255, 1);
+$thirdColor: rgba(131, 181, 255, 1);
+
+.blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        $firstColor,
+        $secondColor,
+        $thirdColor,
+    );
+    animation: rotate 6s infinite;
+    opacity: 0.8;
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(12vmax);
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
