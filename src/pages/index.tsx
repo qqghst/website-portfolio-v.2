@@ -9,6 +9,7 @@ import Loader from '@/components/loader';
 import Navbar from '@/components/navbar';
 import Masthead from '@/components/masthead';
 import About from '@/components/about';
+import Marquee from '@/components/marquee';
 import Footer from '@/components/footer';
 
 // import gsap from 'gsap';
@@ -49,6 +50,7 @@ export default function Home() {
                     <Navbar />
                     <Masthead />
                     <About />
+                    <Marquee />
                     <Footer />
                 </div>
             )}
