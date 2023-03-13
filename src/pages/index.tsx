@@ -9,6 +9,7 @@ import Loader from '@/components/loader';
 import Navbar from '@/components/navbar';
 import Masthead from '@/components/masthead';
 import About from '@/components/about';
+import Services from '@/components/services';
 import Marquee from '@/components/marquee';
 import Footer from '@/components/footer';
 
@@ -50,6 +51,7 @@ export default function Home() {
                     <Navbar />
                     <Masthead />
                     <About />
+                    <Services />
                     <Marquee />
                     <Footer />
                 </div>
