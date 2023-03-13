@@ -4,10 +4,11 @@ import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.scss';
 
+import CustomCursor from '@/ui/custom-cursor';
 import Loader from '@/components/loader';
 import Navbar from '@/components/navbar';
 import Masthead from '@/components/masthead';
-import CustomCursor from '@/ui/custom-cursor';
+import About from '@/components/about';
 import Footer from '@/components/footer';
 
 // import gsap from 'gsap';
@@ -47,6 +48,7 @@ export default function Home() {
                     <CustomCursor />
                     <Navbar />
                     <Masthead />
+                    <About />
                     <Footer />
                 </div>
             )}
