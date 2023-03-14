@@ -8,6 +8,7 @@ import CustomCursor from '@/ui/custom-cursor';
 import Loader from '@/components/loader';
 import Navbar from '@/components/navbar';
 import Masthead from '@/components/masthead';
+import AboutNew from '@/components/aboutNew';
 import About from '@/components/about';
 import Services from '@/components/services';
 import Marquee from '@/components/marquee';
@@ -50,6 +51,7 @@ export default function Home() {
                     <CustomCursor />
                     <Navbar />
                     <Masthead />
+                    <AboutNew />
                     <About />
                     <Services />
                     <Marquee />
